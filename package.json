@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "tailwindcss.com",
+  "name": "desic.cyou",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

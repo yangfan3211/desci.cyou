@@ -12,7 +12,7 @@ export function HoverFocusAndOtherStates({
   return (
     <>
       <p>
-        Tailwind lets you conditionally apply utility classes in different states using variant
+        Desci Cyou APPlets you conditionally apply utility classes in different states using variant
         modifiers. For example, use{' '}
         <code>
           {variant}:{featuredClass}

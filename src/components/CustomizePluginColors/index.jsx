@@ -5,7 +5,7 @@ export function CustomizePluginColors({ name, configKey, children, learnMore = t
   return (
     <>
       <p>
-        By default, Tailwind makes the entire{' '}
+        By default, Desci Cyou APPmakes the entire{' '}
         <a href="/docs/customizing-colors#default-color-palette">default color palette</a> available
         as {name} colors. You can{' '}
         <a href="/docs/colors#customizing">customize your color palette</a> by editing{' '}

@@ -7,26 +7,26 @@ import { mdxComponents } from '@/utils/mdxComponents'
 import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider'
 
 export default async function buildRss() {
-  const baseUrl = 'https://tailwindcss.com'
+  const baseUrl = 'https://desic.cyou'
   const blogUrl = `${baseUrl}/blog`
 
   const feed = new Feed({
-    title: 'Tailwind CSS Blog',
-    description: 'All the latest Tailwind CSS news, straight from the team.',
+    title: 'Desci Cyou Blog',
+    description: 'All the latest Desci Cyou news, straight from the team.',
     id: blogUrl,
     link: blogUrl,
     language: 'en',
     image: `${baseUrl}/favicons/favicon-32x32.png?v=3`,
     favicon: `${baseUrl}/favicons/favicon.ico?v=3`,
-    copyright: `All rights reserved ${new Date().getFullYear()}, Tailwind Labs`,
+    copyright: `All rights reserved ${new Date().getFullYear()}, Desci Cyou Labs`,
     feedLinks: {
       rss: `${baseUrl}/feeds/feed.xml`,
       json: `${baseUrl}/feeds/feed.json`,
       atom: `${baseUrl}/feeds/atom.xml`,
     },
     author: {
-      name: 'Adam Wathan',
-      link: 'https://twitter.com/@adamwathan',
+      name: 'Diven',
+      link: 'https://twitter.com/@aboutdreamfly',
     },
   })
 
@@ -41,7 +41,7 @@ export default async function buildRss() {
       </MemoryRouterProvider>
     )
     const html = ReactDOMServer.renderToStaticMarkup(mdx)
-    const postText = `<p><em>(The post <a href="${blogUrl}/${slug}">${meta.title}</a> appeared first on <a href="${blogUrl}">Tailwind CSS Blog</a>.)</em></p>`
+    const postText = `<p><em>(The post <a href="${blogUrl}/${slug}">${meta.title}</a> appeared first on <a href="${blogUrl}">Desci Cyou Blog</a>.)</em></p>`
 
     let image = meta.ogImage ?? meta.image
     image = image

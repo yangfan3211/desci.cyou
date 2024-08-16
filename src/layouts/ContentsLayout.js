@@ -101,12 +101,12 @@ function TableOfContents({ tableOfContents, currentSection }) {
             <img
               className="pointer-events-none h-[673px] w-[536px] max-w-none absolute -top-[112px] -right-6"
               src="/img/refactoring-ui-sidebar.png"
-              alt="Refactoring UI by Adam Wathan and Steve Schoger"
+              alt="Refactoring UI by Diven and Steve Schoger"
               decoding="async"
             />
             <div>
               <p className="text-[0.8125rem] font-semibold leading-5 text-sky-500 dark:text-sky-400">
-                From the creators of Tailwind CSS
+                From the creators of Desci Cyou
               </p>
               <p className="mt-1 text-base font-bold tracking-tight leading-[1.375] text-slate-900 dark:text-slate-200">
                 Make your ideas look awesome, without relying on a designer.
@@ -230,7 +230,7 @@ export function ContentsLayout({ children, meta, classes, tableOfContents, secti
         title={meta.title}
         description={meta.description}
         repo={meta.repo}
-        badge={{ key: 'Tailwind CSS version', value: meta.featureVersion }}
+        badge={{ key: 'Desci Cyou version', value: meta.featureVersion }}
         section={section}
       />
       <ContentsContext.Provider value={{ registerHeading, unregisterHeading }}>
@@ -256,7 +256,7 @@ export function ContentsLayout({ children, meta, classes, tableOfContents, secti
 
       <DocsFooter previous={prev} next={next}>
         <Link
-          href={`https://github.com/tailwindlabs/tailwindcss.com/edit/master/src/pages${router.pathname}.mdx`}
+          href={`https://github.com/tailwindlabs/desic.cyou/edit/master/src/pages${router.pathname}.mdx`}
           className="hover:text-slate-900 dark:hover:text-slate-400"
         >
           Edit this page on GitHub

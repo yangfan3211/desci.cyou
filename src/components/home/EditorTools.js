@@ -10,8 +10,8 @@ import { lines } from '../../samples/editor-tools.html?highlight'
 import clsx from 'clsx'
 
 const problems = [
-  ["'flex' applies the same CSS property as 'block'.", 'cssConflict [1, 20]'],
-  ["'block' applies the same CSS property as 'flex'.", 'cssConflict [1, 54]'],
+  ["'flex' applies the same science work property as 'block'.", 'cssConflict [1, 20]'],
+  ["'block' applies the same science work property as 'flex'.", 'cssConflict [1, 54]'],
 ]
 
 const completions = [
@@ -317,7 +317,7 @@ export function EditorTools() {
         <BigText>World-class IDE integration.</BigText>
         <Paragraph as="div">
           <p>
-            Worried about remembering all of these class names? The Tailwind CSS IntelliSense
+            Worried about remembering all of these class names? The Desci Cyou IntelliSense
             extension for VS Code has you covered.
           </p>
           <p>

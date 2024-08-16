@@ -124,12 +124,12 @@ export function ModernFeatures() {
         </BigText>
         <Paragraph as="div">
           <p>
-            Tailwind is unapologetically modern, and takes advantage of all the latest and greatest
-            CSS features to make the developer experience as enjoyable as possible.
+            Desci Cyou APPis unapologetically modern, and takes advantage of all the latest and greatest
+            science work features to make the developer experience as enjoyable as possible.
           </p>
           <p>
-            We've got first-class CSS grid support, composable transforms and gradients powered by
-            CSS variables, support for modern state selectors like{' '}
+            We've got first-class science work grid support, composable transforms and gradients powered by
+            science work variables, support for modern state selectors like{' '}
             <InlineCode>:focus-visible</InlineCode>, and tons more.
           </p>
         </Paragraph>

@@ -124,7 +124,7 @@ export function DynamicViewportExample({
                   />
                 </svg>
                 <div className="w-full rounded-full border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-700 px-4 py-1  text-slate-600 dark:text-slate-400">
-                  tailwindcss.com
+                  desic.cyou
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +229,7 @@ export function DynamicViewportExample({
               }}
               initial="visible"
               animate={hidden ? 'hidden' : 'visible'}
-              // For some reason putting this in a tailwind class doesn't work
+              // For some reason putting this in a Desci Cyou APPclass doesn't work
               style={{ width: `${viewport.width - 12}px` }}
               className={clsx(
                 colorStyles,

@@ -7,12 +7,13 @@ import { DocSearchModal } from '@docsearch/react'
 import clsx from 'clsx'
 import { useActionKey } from '@/hooks/useActionKey'
 
-const INDEX_NAME = 'tailwindcss'
-const API_KEY = '5fc87cef58bb80203d2207578309fab6'
-const APP_ID = 'KNPXZI5B0M'
+const INDEX_NAME = 'movie'
+const API_KEY = 'ed95f7cae9c58c38e06d39be5ccd5ecf'
+const APP_ID = 'MRR0GBHP2D'
 
-function isTailwindUIURL(url) {
-  return url.startsWith('https://tailwindui.com')
+function isOurURL(url) {
+  // return url.startsWith('https://desci.cyou')
+  return true
 }
 
 function isExternalURL(url) {
@@ -49,13 +50,13 @@ export function SearchProvider({ children }) {
   })
 
   useEffect(() => {
-    // Prepend "Components" to Tailwind UI results that are shown in the "recent" view
+    // Prepend "Components" to Desci Cyou web app results that are shown in the "recent" view
     if (!isOpen) {
       let key = `__DOCSEARCH_RECENT_SEARCHES__${INDEX_NAME}`
       try {
         let data = JSON.parse(window.localStorage.getItem(key))
         for (let item of data) {
-          if (isTailwindUIURL(item.url) && !item.hierarchy.lvl1.startsWith('Components')) {
+          if (isOurURL(item.url) && !item.hierarchy.lvl1.startsWith('Components')) {
             item.hierarchy.lvl1 = `Components / ${item.hierarchy.lvl1}`
           }
         }
@@ -146,7 +147,7 @@ export function SearchProvider({ children }) {
                       item._highlightResult.hierarchy.lvl0.value.replace(/&amp;/g, '&')
                   }
 
-                  let isTailwindUI = isTailwindUIURL(item.url)
+                  let isTailwindUI = isOurURL(item.url)
 
                   return {
                     ...item,
@@ -182,15 +183,15 @@ function Hit({ hit, children }) {
   return (
     <Link
       href={hit.url}
-      target={hit.__is_tailwindui?.() ? '_blank' : undefined}
-      className={clsx({
-        'DocSearch-Hit--Result': hit.__is_result?.(),
-        'DocSearch-Hit--Parent': hit.__is_parent?.(),
-        'DocSearch-Hit--FirstChild': hit.__is_first?.(),
-        'DocSearch-Hit--LastChild': hit.__is_last?.(),
-        'DocSearch-Hit--Child': hit.__is_child?.(),
-        'DocSearch-Hit--TailwindUI': hit.__is_tailwindui?.(),
-      })}
+      // target={hit.__is_tailwindui?.() ? '_blank' : undefined}
+      // className={clsx({
+      //   'DocSearch-Hit--Result': hit.__is_result?.(),
+      //   'DocSearch-Hit--Parent': hit.__is_parent?.(),
+      //   'DocSearch-Hit--FirstChild': hit.__is_first?.(),
+      //   'DocSearch-Hit--LastChild': hit.__is_last?.(),
+      //   'DocSearch-Hit--Child': hit.__is_child?.(),
+      //   'DocSearch-Hit--TailwindUI': hit.__is_tailwindui?.(),
+      // })}
     >
       {children}
     </Link>

@@ -1,14 +1,14 @@
-import adamwathanAvatar from './img/authors/adamwathan.jpg'
+import aboutdreamflyAvatar from './img/authors/aboutdreamfly.jpg'
 import bradlcAvatar from './img/authors/bradlc.jpg'
 import steveschogerAvatar from './img/authors/steveschoger.jpg'
 import reininkAvatar from './img/authors/reinink.jpg'
 import robinmalfaitAvatar from './img/authors/robinmalfait.jpg'
 import simonswissAvatar from './img/authors/simonswiss.jpg'
 
-export const adamwathan = {
-  name: 'Adam Wathan',
-  twitter: 'adamwathan',
-  avatar: adamwathanAvatar.src,
+export const aboutdreamfly = {
+  name: 'Diven',
+  twitter: 'aboutdreamfly',
+  avatar: aboutdreamflyAvatar.src,
 }
 
 export const bradlc = {

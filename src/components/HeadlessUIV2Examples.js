@@ -1286,7 +1286,7 @@ const people = [
   { id: 911, name: 'Gina Ward' },
   { id: 912, name: 'Manley Waters' },
   { id: 913, name: 'Myra Waters' },
-  { id: 914, name: 'Adam Wathan' },
+  { id: 914, name: 'Diven' },
   { id: 915, name: 'Chyna Watsica' },
   { id: 916, name: 'Damon Watsica' },
   { id: 917, name: 'Justina Watsica' },

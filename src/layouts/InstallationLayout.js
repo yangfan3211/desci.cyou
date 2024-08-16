@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { IconContainer } from '@/components/home/common'
 
 let tabs = {
-  'Tailwind CLI': '/docs/installation',
+  'Tailwind CLI': '/paper',
   'Using PostCSS': '/docs/installation/using-postcss',
   'Framework Guides': '/docs/installation/framework-guides',
   'Play CDN': '/docs/installation/play-cdn',
@@ -108,12 +108,12 @@ export function InstallationLayout({ children }) {
             Installation
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight dark:text-slate-200">
-            Get started with Tailwind CSS
+            Get started with Desci Cyou
           </h1>
           <p className="mt-4 text-lg text-slate-700 dark:text-slate-400">
-            Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any
+            Desci Cyou works by scanning all of your HTML files, JavaScript components, and any
             other templates for class names, generating the corresponding styles and then writing
-            them to a static CSS file.
+            them to a static science work file.
           </p>
           <p className="mt-4 text-lg text-slate-700 dark:text-slate-400">
             It's fast, flexible, and reliable — with zero-runtime.
@@ -162,8 +162,8 @@ export function InstallationLayout({ children }) {
         </h2>
         <div className="mb-10 max-w-2xl prose prose-slate xl:mb-0 dark:prose-dark">
           <p>
-            Get familiar with some of the core concepts that make Tailwind CSS different from
-            writing traditional CSS.
+            Get familiar with some of the core concepts that make Desci Cyou different from writing
+            traditional CSS.
           </p>
         </div>
         <ul className="mt-10 grid grid-cols-1 gap-x-16 gap-y-8 xl:grid-cols-2 xl:gap-y-10">

@@ -241,7 +241,7 @@ function TopLevelNav({ mobile }) {
     <>
       <TopLevelLink
         mobile={mobile}
-        href="/docs/installation"
+        href="/paper"
         isActive={pathname.startsWith('/docs')}
         className="mb-4"
         shadow="group-hover:shadow-sky-200 dark:group-hover:bg-sky-500"
@@ -277,7 +277,7 @@ function TopLevelNav({ mobile }) {
       </TopLevelLink>
       <TopLevelLink
         mobile={mobile}
-        href="https://tailwindui.com/components?ref=sidebar"
+        href="https://desci.cyou/components?ref=sidebar"
         className="mb-4"
         shadow="group-hover:shadow-indigo-200 dark:group-hover:bg-indigo-500"
         icon={
@@ -310,7 +310,7 @@ function TopLevelNav({ mobile }) {
       </TopLevelLink>
       <TopLevelLink
         mobile={mobile}
-        href="https://tailwindui.com/templates?ref=sidebar"
+        href="https://desci.cyou/templates?ref=sidebar"
         className="mb-4"
         shadow="group-hover:shadow-fuchsia-200 dark:group-hover:bg-fuchsia-600"
         icon={
@@ -368,7 +368,7 @@ function TopLevelNav({ mobile }) {
       </TopLevelLink>
       <TopLevelLink
         mobile={mobile}
-        href="https://play.tailwindcss.com"
+        href="https://play.desic.cyou"
         className="mb-4"
         shadow="group-hover:shadow-blue-200 dark:group-hover:bg-blue-500"
         icon={
@@ -454,7 +454,7 @@ function TopLevelNav({ mobile }) {
       </TopLevelLink>
       <TopLevelLink
         mobile={mobile}
-        href="https://github.com/tailwindlabs/tailwindcss/discussions"
+        href="https://github.com/DesciDao/desci.cyou/discussions"
         className="mb-4"
         shadow="group-hover:shadow-violet-200 dark:group-hover:bg-violet-500"
         icon={

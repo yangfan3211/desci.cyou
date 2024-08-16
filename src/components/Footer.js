@@ -14,9 +14,9 @@ export function Footer({ className }) {
 function FooterContent() {
   return (
     <div className="text-center">
-      <Logo className="h-4 w-auto mx-auto" />
+      <Logo className="h-10 w-auto mx-auto" />
       <p className="mt-4 text-sm leading-6 text-slate-500">
-        &copy; {new Date().getFullYear()} Tailwind Labs Inc. All rights reserved.
+        &copy; {new Date().getFullYear()} Desci Cyou Labs Inc. All rights reserved.
       </p>
     </div>
   )

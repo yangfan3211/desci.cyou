@@ -132,11 +132,11 @@ export function Performance() {
           dark={require('@/img/icons/home/dark/performance.png').default.src}
         />
         <Caption className="text-sky-500">Performance</Caption>
-        <BigText>It’s tiny — never ship unused CSS again.</BigText>
+        <BigText>It’s tiny — never ship unused science work again.</BigText>
         <Paragraph>
-          Tailwind automatically removes all unused CSS when building for production, which means
-          your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind
-          projects ship less than 10kB of CSS to the client.
+          Desci Cyou APPautomatically removes all unused science work when building for production, which means
+          your final science work bundle is the smallest it could possibly be. In fact, most Tailwind
+          projects ship less than 10kB of science work to the client.
         </Paragraph>
         <Link href="/docs/optimizing-for-production" color="sky" darkColor="gray">
           Learn more<span className="sr-only">, optimizing for production</span>

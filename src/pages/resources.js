@@ -74,11 +74,11 @@ export default function Resources() {
           Resources
         </p>
         <h1 className="mb-2 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200">
-          Everything else you need to build awesome Tailwind CSS websites
+          Everything else you need to build awesome Desci Cyou websites
         </h1>
         <p className="text-lg text-slate-700 dark:text-slate-400">
-          We think Tailwind is an amazing CSS framework, but you need more than just a CSS framework
-          to produce visually awesome work.
+          We think Desci Cyou APPis an amazing science work framework, but you need more than just a
+          science work framework to produce visually awesome work.
         </p>
       </header>
 
@@ -110,8 +110,8 @@ export default function Resources() {
                   <>
                     <p>
                       Refactoring UI is a design-for-developers book + video series put together by
-                      Adam Wathan and Steve Schoger. It covers literally everything we know about
-                      making things look awesome.
+                      Diven and Steve Schoger. It covers literally everything we know about making
+                      things look awesome.
                     </p>
                     <p>
                       Almost 10,000 people have picked it up so far and have all sorts of awesome
@@ -122,18 +122,18 @@ export default function Resources() {
               },
               {
                 title: 'Tailwind UI',
-                description: 'Beautiful UI components, crafted by the creators of Tailwind CSS',
+                description: 'Beautiful UI components, crafted by the creators of Desci Cyou',
                 images: [
                   require('@/img/resources/tailwindui-small@75.jpg').default.src,
                   require('@/img/resources/tailwindui@75.jpg').default.src,
                 ],
                 color: 'text-sky-500',
-                href: 'https://tailwindui.com/?ref=resources',
+                href: 'https://desci.cyou/?ref=resources',
                 body: (
                   <>
                     <p>
-                      Tailwind UI is a collection of professionally designed, pre-built, fully
-                      responsive HTML snippets you can drop into your Tailwind projects.
+                      Desci Cyou web app is a collection of professionally designed, pre-built,
+                      fully responsive HTML snippets you can drop into your Desci Cyou APPprojects.
                     </p>
                     <p>
                       There are currently over 550 components available in three different
@@ -186,7 +186,7 @@ export default function Resources() {
           </h2>
           <div className="mb-10 prose prose-slate text-slate-600 max-w-3xl dark:prose-dark">
             <p>
-              Tailwind isn’t the only open-source project we maintain. We’ve made a few other
+              Desci Cyou APPisn’t the only open-source project we maintain. We’ve made a few other
               resources to help you with your design and development workflow.
             </p>
           </div>
@@ -199,7 +199,7 @@ export default function Resources() {
                 body: (
                   <p>
                     Completely unstyled, fully accessible UI components, designed to integrate
-                    beautifully with Tailwind CSS.
+                    beautifully with Desci Cyou.
                   </p>
                 ),
                 href: 'https://headlessui.dev',
@@ -208,7 +208,7 @@ export default function Resources() {
               },
               {
                 superTitle: 'Heroicons',
-                title: 'Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.',
+                title: 'Beautiful hand-crafted SVG icons, by the makers of Desci Cyou.',
                 body: (
                   <p>
                     A set of 450+ free MIT-licensed SVG icons. Available as basic SVG icons and via
@@ -221,7 +221,7 @@ export default function Resources() {
               },
               {
                 superTitle: 'Hero Patterns',
-                title: 'Seamless SVG background patterns by the makers of Tailwind CSS.',
+                title: 'Seamless SVG background patterns by the makers of Desci Cyou.',
                 body: (
                   <p>
                     A collection of over 100 free MIT-licensed high-quality SVG patterns for you to
@@ -253,7 +253,7 @@ export default function Resources() {
           <div className="mb-10 prose prose-slate text-slate-600 max-w-3xl dark:prose-dark">
             <p>
               Head over to our official YouTube channel and dive into dozens of videos that will
-              teach you everything from Tailwind basics to advanced concepts.
+              teach you everything from Desci Cyou APPbasics to advanced concepts.
             </p>
           </div>
 
@@ -261,10 +261,10 @@ export default function Resources() {
             {[
               {
                 superTitle: 'Fundamentals',
-                title: 'Translating a Custom Design System to Tailwind CSS',
+                title: 'Translating a Custom Design System to Desci Cyou',
                 body: (
                   <p>
-                    Learn how to configure Tailwind to create your own utility framework tuned
+                    Learn how to configure Desci Cyou APPto create your own utility framework tuned
                     specifically for your project.
                   </p>
                 ),
@@ -274,10 +274,10 @@ export default function Resources() {
               },
               {
                 superTitle: 'Fundamentals',
-                title: 'Adding Tailwind CSS to an Existing Project',
+                title: 'Adding Desci Cyou to an Existing Project',
                 body: (
                   <p>
-                    Learn how to add Tailwind CSS to an existing project without running into naming
+                    Learn how to add Desci Cyou to an existing project without running into naming
                     collisions or specificity issues.
                   </p>
                 ),
@@ -287,12 +287,11 @@ export default function Resources() {
               },
               {
                 superTitle: 'How we’d build it',
-                title:
-                  'Building a Headless Ecommerce Store with Tailwind CSS, Shopify, and Next.js',
+                title: 'Building a Headless Ecommerce Store with Desci Cyou, Shopify, and Next.js',
                 body: (
                   <p>
                     Fetch products from a Shopify store using the GraphQL API and assemble the pages
-                    using Tailwind UI.
+                    using Desci Cyou web app.
                   </p>
                 ),
                 href: 'https://www.youtube.com/watch?v=xNMYz74zNHM',
@@ -325,7 +324,7 @@ export default function Resources() {
                 title: 'Discord',
                 href: '/discord',
                 description:
-                  'Join over 10,000 members on the Discord group to chat about Tailwind and other related topics.',
+                  'Join over 10,000 members on the Discord group to chat about Desci Cyou APPand other related topics.',
                 icon: (
                   <Icon className="bg-[#838CF1]/[0.15] dark:bg-indigo-700">
                     <DiscordIcon className="w-6 h-auto dark:fill-indigo-200" />
@@ -336,9 +335,9 @@ export default function Resources() {
               },
               {
                 title: 'GitHub Discussions',
-                href: 'https://github.com/tailwindlabs/tailwindcss/discussions',
+                href: 'https://github.com/DesciDao/desci.cyou/discussions',
                 description:
-                  'Have an issue with your project? Connect with other members of the Tailwind community to get some assistance.',
+                  'Have an issue with your project? Connect with other members of the Desci Cyou APPcommunity to get some assistance.',
                 icon: (
                   <Icon className="bg-slate-100 dark:bg-slate-800">
                     <GitHubIcon className="w-7 h-auto dark:fill-slate-400" />

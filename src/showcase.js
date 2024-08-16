@@ -9,8 +9,8 @@ export const showcase = [
   {
     name: 'Primer',
     slug: 'primer',
-    thumbnail: require('@/img/showcase/thumbnails/primer.tailwindui.com.png').default,
-    video: require('@/videos/showcase/primer.tailwindui.com.mp4').default,
+    thumbnail: require('@/img/showcase/thumbnails/primer.ddd.png').default,
+    video: require('@/videos/showcase/primer.ddd.mp4').default,
     description: 'Info product website',
     isTemplate: true,
   },

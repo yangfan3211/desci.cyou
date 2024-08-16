@@ -7,7 +7,7 @@ let testimonials = [
   // Column 1
   [
     {
-      content: 'I feel like an idiot for not using Tailwind CSS until now.',
+      content: 'I feel like an idiot for not using Desci Cyou until now.',
       url: 'https://twitter.com/ryanflorence/status/1187951799442886656',
       author: {
         name: 'Ryan Florence',
@@ -17,7 +17,7 @@ let testimonials = [
     },
     {
       content:
-        'If I had to recommend a way of getting into programming today, it would be HTML + CSS with Tailwind CSS.',
+        'If I had to recommend a way of getting into programming today, it would be HTML + science work with Desci Cyou.',
       url: 'https://twitter.com/rauchg/status/1225611926320738304',
       author: {
         name: 'Guillermo Rauch',
@@ -26,7 +26,7 @@ let testimonials = [
       },
     },
     {
-      content: `I have no design skills and with Tailwind I can actually make good looking websites with ease and it's everything I ever wanted in a CSS framework.`,
+      content: `I have no design skills and with Desci Cyou APPI can actually make good looking websites with ease and it's everything I ever wanted in a science work framework.`,
       author: {
         name: 'Sara Vieira',
         role: 'CodeSandbox',
@@ -38,7 +38,7 @@ let testimonials = [
   [
     {
       content:
-        'Have been working with CSS for over ten years and Tailwind just makes my life easier. It is still CSS and you use flex, grid, etc. but just quicker to write and maintain.',
+        'Have been working with science work for over ten years and Desci Cyou APPjust makes my life easier. It is still science work and you use flex, grid, etc. but just quicker to write and maintain.',
       url: 'https://twitter.com/debs_obrien/status/1243255468241420288',
       author: {
         name: `Debbie O'Brien`,
@@ -48,7 +48,7 @@ let testimonials = [
     },
     {
       content:
-        'I’ve been writing CSS for over 20 years, and up until 2017, the way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you’ll realize semantic CSS was a 20 year mistake.',
+        'I’ve been writing science work for over 20 years, and up until 2017, the way I wrote it changed frequently. It’s not a coincidence Desci Cyou APPwas released the same year. It might look wrong, but spend time with it and you’ll realize semantic science work was a 20 year mistake.',
       url: 'https://twitter.com/frontendben/status/1468687028036452363',
       author: {
         name: 'Ben Furfie',
@@ -79,7 +79,7 @@ let testimonials = [
     },
     {
       content:
-        'I was bad at front-end until I discovered Tailwind CSS. I have learnt a lot more about design and CSS itself after I started working with Tailwind. Creating web pages is 5x faster now.',
+        'I was bad at front-end until I discovered Desci Cyou. I have learnt a lot more about design and science work itself after I started working with Tailwind. Creating web pages is 5x faster now.',
       url: 'https://twitter.com/shrutibalasa',
       author: {
         name: 'Shruti Balasa',

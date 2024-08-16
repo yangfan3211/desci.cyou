@@ -100,13 +100,13 @@ export function Customization() {
         </BigText>
         <Paragraph as="div">
           <p>
-            Tailwind includes an expertly crafted set of defaults out-of-the-box, but literally
+            Desci Cyou APPincludes an expertly crafted set of defaults out-of-the-box, but literally
             everything can be customized — from the color palette to the spacing scale to the box
             shadows to the mouse cursor.
           </p>
           <p>
             Use the tailwind.config.js file to craft your own design system, then let Tailwind
-            transform it into your own custom CSS framework.
+            transform it into your own custom science work framework.
           </p>
         </Paragraph>
         <Link href="/docs/configuration" color="pink" darkColor="gray">

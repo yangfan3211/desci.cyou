@@ -11,10 +11,10 @@ import { ThemeSelect, ThemeToggle } from './ThemeToggle'
 function Featured() {
   return (
     <a
-      href="https://tailwindcss.com/blog/2024-05-24-catalyst-application-layouts"
+      href="/blog/2024-08-15"
       className="ml-3 text-xs leading-5 font-medium text-sky-600 dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-sky-400/20"
     >
-      <strong className="font-semibold">Introducing Catalyst</strong>
+      <strong className="font-semibold">News</strong>
       <svg
         width="2"
         height="2"
@@ -24,7 +24,7 @@ function Featured() {
       >
         <circle cx="1" cy="1" r="1" />
       </svg>
-      <span className="ml-2">A modern application UI kit for React</span>
+      <span className="ml-2">Web app coming soon</span>
       <svg
         width="3"
         height="6"
@@ -99,7 +99,7 @@ export function NavPopover({ display = 'md:hidden', className, ...props }) {
             <NavItems />
             <li>
               <a
-                href="https://github.com/tailwindlabs/tailwindcss"
+                href="https://github.com/DesciDao/desci.cyou"
                 className="hover:text-sky-500 dark:hover:text-sky-400"
               >
                 GitHub
@@ -118,29 +118,26 @@ export function NavPopover({ display = 'md:hidden', className, ...props }) {
 export function NavItems() {
   return (
     <>
-      <li>
-        <Link href="/docs/installation" className="hover:text-sky-500 dark:hover:text-sky-400">
+      {/* <li>
+        <Link href="/paper" className="hover:text-sky-500 dark:hover:text-sky-400">
           Docs
         </Link>
-      </li>
+      </li> */}
       <li>
-        <a
-          href="https://tailwindui.com/?ref=top"
-          className="hover:text-sky-500 dark:hover:text-sky-400"
-        >
-          Components
-        </a>
+        <Link href="/paper" className="hover:text-sky-500 dark:hover:text-sky-400">
+          Top Paper
+        </Link>
       </li>
       <li>
         <Link href="/blog" className="hover:text-sky-500 dark:hover:text-sky-400">
           Blog
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link href="/showcase" className="hover:text-sky-500 dark:hover:text-sky-400">
           Showcase
         </Link>
-      </li>
+      </li> */}
     </>
   )
 }
@@ -215,10 +212,10 @@ export function Header({ hasNav = false, navIsOpen, onNavToggle, title, section 
                   Router.push('/brand')
                 }}
               >
-                <span className="sr-only">Tailwind CSS home page</span>
-                <Logo className="w-auto h-5" />
+                <span className="sr-only">Desci Cyou home page</span>
+                <Logo className="w-auto h-10" />
               </Link>
-              <VersionSwitcher />
+              {/* <VersionSwitcher /> */}
               <Featured />
               <div className="relative hidden lg:flex items-center ml-auto">
                 <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
@@ -229,10 +226,10 @@ export function Header({ hasNav = false, navIsOpen, onNavToggle, title, section 
                 <div className="flex items-center border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
                   <ThemeToggle panelClassName="mt-8" />
                   <a
-                    href="https://github.com/tailwindlabs/tailwindcss"
+                    href="https://github.com/DesciDao/desci.cyou"
                     className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
                   >
-                    <span className="sr-only">Tailwind CSS on GitHub</span>
+                    <span className="sr-only">Desci Cyou on GitHub</span>
                     <svg
                       viewBox="0 0 16 16"
                       className="w-5 h-5"

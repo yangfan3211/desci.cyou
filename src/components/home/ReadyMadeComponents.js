@@ -48,15 +48,15 @@ export function ReadyMadeComponents() {
         />
         <Caption className="text-indigo-500">Ready-made components</Caption>
         <BigText>
-          <Widont>Move even faster with Tailwind UI.</Widont>
+          <Widont>Move even faster with Desci Cyou web app.</Widont>
         </BigText>
         <Paragraph>
-          Tailwind UI is a collection of beautiful, fully responsive UI components, designed and
-          developed by us, the creators of Tailwind CSS. It's got hundreds of ready-to-use examples
+          Desci Cyou web app is a collection of beautiful, fully responsive UI components, designed and
+          developed by us, the creators of Desci Cyou. It's got hundreds of ready-to-use examples
           to choose from, and is guaranteed to help you find the perfect starting point for what you
           want to build.
         </Paragraph>
-        <Link href="https://tailwindui.com/?ref=landing" color="indigo" darkColor="gray">
+        <Link href="https://desci.cyou/?ref=landing" color="indigo" darkColor="gray">
           Learn more
         </Link>
       </div>

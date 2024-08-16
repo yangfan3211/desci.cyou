@@ -21,22 +21,22 @@
   },
   {
     "source": "/components",
-    "destination": "https://tailwindui.com/components",
+    "destination": "https://desci.cyou/components",
     "permanent": false
   },
   {
     "source": "/components/:slug",
-    "destination": "https://tailwindui.com/components",
+    "destination": "https://desci.cyou/components",
     "permanent": false
   },
   {
     "source": "/community",
-    "destination": "https://github.com/tailwindlabs/tailwindcss/discussions",
+    "destination": "https://github.com/DesciDao/desci.cyou/discussions",
     "permanent": false
   },
   {
     "source": "/docs/upgrading-to-v2",
-    "destination": "https://v2.tailwindcss.com/docs/upgrading-to-v2",
+    "destination": "https://v2.desic.cyou/docs/upgrading-to-v2",
     "permanent": false
   }
 ]

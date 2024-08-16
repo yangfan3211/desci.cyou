@@ -61,10 +61,10 @@ export function TuiBanner() {
                 <span className="hidden lg:inline text-slate-400">
                   <strong className="text-white font-semibold mr-1">Now in early access!</strong>
                   <span className="xl:hidden">
-                    Beautiful UI components by the creators of Tailwind CSS.
+                    Beautiful UI components by the creators of Desci Cyou.
                   </span>
                   <span className="hidden xl:inline">
-                    Beautiful UI components, crafted by the creators of Tailwind CSS.
+                    Beautiful UI components, crafted by the creators of Desci Cyou.
                   </span>
                 </span>
               </p>
@@ -72,7 +72,7 @@ export function TuiBanner() {
             <div className="order-3 mt-2 shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
               <div className="rounded-md shadow-sm">
                 <a
-                  href="https://tailwindui.com?utm_source=tailwindcss&utm_medium=footer-banner"
+                  href="https://desci.cyou?utm_source=tailwindcss&utm_medium=footer-banner"
                   className="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-slate-900 bg-white hover:text-slate-800 focus:outline-none focus:underline"
                 >
                   Learn more

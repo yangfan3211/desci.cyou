@@ -41,7 +41,7 @@ function Header() {
           />
         </div>
         <div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
-          <Logo className="w-auto h-5" />
+          <Logo className="w-auto h-10" />
           <div className="flex items-center">
             <SearchButton className="text-slate-500 hover:text-slate-600 w-8 h-8 -my-1 flex items-center justify-center md:hidden dark:hover:text-slate-300">
               <span className="sr-only">Search</span>
@@ -69,10 +69,10 @@ function Header() {
               <div className="flex items-center border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
                 <ThemeToggle />
                 <a
-                  href="https://github.com/tailwindlabs/tailwindcss"
+                  href="https://github.com/DesciDao/desci.cyou"
                   className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
                 >
-                  <span className="sr-only">Tailwind CSS on GitHub</span>
+                  <span className="sr-only">Desci Cyou on GitHub</span>
                   <svg
                     viewBox="0 0 16 16"
                     className="w-5 h-5"
@@ -88,22 +88,23 @@ function Header() {
         </div>
         <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
           <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-left dark:text-white">
-            Collaboration Without Borders, Empowering Science Through Decentralization.
+            Decentralized Science, See You Involved.
           </h1>
-          <p className="mt-6 text-lg text-slate-600 text-center max-w-3xl mx-auto dark:text-slate-400">
-            A utility-first CSS framework packed with classes like{' '}
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">flex</code>,{' '}
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">pt-4</code>,{' '}
+          <p className="mt-6 text-lg text-slate-600 max-w-3xl dark:text-slate-400 text-left">
+            Collaboration
             <code className="font-mono font-medium text-sky-500 dark:text-sky-400">
-              text-center
+              {' '}
+              Without Borders
             </code>{' '}
-            and{' '}
-            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">rotate-90</code>{' '}
-            that can be composed to build any design, directly in your markup.
+            , and Join the Movement: Building Decentralized Science Together for a Future Where{' '}
+            <code className="font-mono font-medium text-sky-500 dark:text-sky-400">
+              Everyone Contributes
+            </code>{' '}
+            . Empowering Science Through Decentralization.
           </p>
-          <div className="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm">
+          <div className="mt-6 sm:mt-10 flex space-x-6 text-sm">
             <NextLink
-              href="/docs/installation"
+              href="/paper"
               className="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"
             >
               Get started
@@ -143,7 +144,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <Hero />
+      {/* <Hero /> */}
     </header>
   )
 }
@@ -155,38 +156,46 @@ export default function Home() {
         <meta
           key="twitter:title"
           name="twitter:title"
-          content="Tailwind CSS - Collaboration Without Borders, Empowering Science Through Decentralization."
+          content="Desci Cyou - Collaboration Without Borders, Empowering Science Through Decentralization."
         />
         <meta
           key="og:title"
           property="og:title"
-          content="Tailwind CSS - Collaboration Without Borders, Empowering Science Through Decentralization."
+          content="Desci Cyou - Collaboration Without Borders, Empowering Science Through Decentralization."
         />
-        <title>Tailwind CSS - Collaboration Without Borders, Empowering Science Through Decentralization.</title>
+        <title>
+          Desci Cyou - Collaboration Without Borders, Empowering Science Through Decentralization.
+        </title>
       </Head>
       <div className="mb-20 overflow-hidden sm:mb-32 md:mb-40">
         <Header />
         <section className="text-center px-8 mt-20 sm:mt-32 md:mt-40">
           <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white">
-            “Best practices” don’t actually work.
+            “Centralized Science” don’t actually work.
           </h2>
           <figure>
             <blockquote>
               <p className="mt-6 max-w-3xl mx-auto text-lg">
-                I’ve written{' '}
-                <a
-                  href="https://adamwathan.me/css-utility-classes-and-separation-of-concerns/"
-                  className="text-sky-500 font-semibold dark:text-sky-400"
-                >
-                  a few thousand words
+                In a world where{' '}
+                <a className="text-sky-500 font-semibold dark:text-sky-400">centralized science</a>{' '}
+                often means restricted access, slow progress, and gatekeepers controlling the flow
+                of knowledge, it’s time for a revolution.
+                <a className="text-sky-500 font-semibold dark:text-sky-400">desci.cyou</a> invites
+                you to be part of something bigger—something better.
+                <a className="text-sky-500 font-semibold dark:text-sky-400">
+                  Decentralized science
                 </a>{' '}
-                on why traditional “semantic class names” are the reason CSS is hard to maintain,
-                but the truth is you’re never going to believe me until you actually try it. If you
-                can suppress the urge to retch long enough to give it a chance, I really think
-                you’ll wonder how you ever worked with CSS any other way.
+                shatters the barriers that hold innovation back, putting the power of discovery in
+                the hands of everyone. Imagine a world where breakthroughs aren’t delayed by
+                bureaucracy, where every voice can contribute, and where knowledge is shared freely
+                for the benefit of all. That’s the future we’re building, and we need you to help
+                make it a reality. This is{' '}
+                <a className="text-sky-500 font-semibold dark:text-sky-400">
+                  science by the people. See you on the frontlines of change!
+                </a>{' '}
               </p>
             </blockquote>
-            <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
+            {/* <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left">
               <img
                 src={require('@/img/adam.jpg').default.src}
                 alt=""
@@ -195,10 +204,10 @@ export default function Home() {
                 decoding="async"
               />
               <div>
-                <div className="text-slate-900 font-semibold dark:text-white">Adam Wathan</div>
-                <div className="mt-0.5 text-sm leading-6">Creator of Tailwind CSS</div>
+                <div className="text-slate-900 font-semibold dark:text-white">Diven</div>
+                <div className="mt-0.5 text-sm leading-6">Creator of Desci Cyou</div>
               </div>
-            </figcaption>
+            </figcaption> */}
           </figure>
         </section>
       </div>
