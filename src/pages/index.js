@@ -24,15 +24,10 @@ import socialCardLarge from '@/img/social-card-large.jpg'
 
 import urania from '@/img/urania.png'
 
-import Galaxy from '@/components/Galaxy';
-
-
-
 function Header() {
   return (
     <header className="relative">
       <div className="px-4 sm:px-6 md:px-8">
-        {/* TODO: use galaxy css instead of bg img */}
         <div
           className={clsx(
             'absolute inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120]',
@@ -110,7 +105,6 @@ function Header() {
         </div>
         <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
           <div className="flex items-start justify-between">
-            
             <div>
               <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-left dark:text-white">
                 SCI on Web3: URANIA
@@ -174,12 +168,12 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span><b>Next-Gen Paper System</b> — transparent & immutable funding flows and on-chain activities</span>
+                  <span><b>Next-Gen Open Conf System</b> — transparent & immutable funding flows and on-chain activities</span>
                 </li>
-                <li className="flex items-start">
+                {/* <li className="flex items-start">
                   <span className="mr-2">•</span>
                   <span><b>Next-Gen Publishing Platform</b> — where everyone can contribute their academic insights</span>
-                </li>
+                </li> */}
               </ul>
             </blockquote>
           </figure>
@@ -200,7 +194,6 @@ export default function Home() {
         <ReadyMadeComponents />
       </div> */}
       <Footer />
-
     </>
   )
 }
