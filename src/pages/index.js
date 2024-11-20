@@ -23,6 +23,7 @@ import { ThemeToggle } from '@/components/ThemeToggle'
 import socialCardLarge from '@/img/social-card-large.jpg'
 
 import urania from '@/img/urania.png'
+import StarryBackground from '@/components/starry-background'
 
 function Header() {
   return (
@@ -34,13 +35,14 @@ function Header() {
             styles.beams
           )}
         >
-          <div
+          {/* <div
             className="absolute inset-0 bg-grid-slate-900/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5"
             style={{
               maskImage: 'linear-gradient(to bottom, transparent, black)',
               WebkitMaskImage: 'linear-gradient(to bottom, transparent, black)',
             }}
-          />
+          /> */}
+          <StarryBackground />
         </div>
         <div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
           <Logo className="w-auto h-10" />
