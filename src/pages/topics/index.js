@@ -2,7 +2,20 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-export default function Papers() {
+// Define Topic structure
+// 定义课题结构
+class Topic {
+  constructor(title, description, proposer, grantor, grantAmount) {
+    this.title = title;              // 标题
+    this.description = description;   // 描述
+    this.proposer = proposer;        // 提出人
+    this.grantor = grantor;          // 资助人
+    this.grantAmount = grantAmount;  // 资助金额
+    this.date = date;                // 提出日期
+  }
+}
+
+export default function Topics() {
   const dateFormat = {
     month: 'long',
     day: 'numeric',
@@ -10,6 +23,8 @@ export default function Papers() {
   }
   const [papers, setPapers] = useState([])
   const [loading, setLoading] = useState(true)
+
+  
 
   useEffect(() => {
     async function fetchPapers() {
@@ -32,10 +47,10 @@ export default function Papers() {
     <main className="max-w-[52rem] mx-auto px-4 pb-28 sm:px-6 md:px-8 xl:px-12 lg:max-w-6xl">
       <header className="py-16 sm:text-center">
         <h1 className="mb-4 text-3xl sm:text-4xl tracking-tight text-slate-900 font-extrabold dark:text-slate-200">
-          Latest AI Research Papers
+          Topics
         </h1>
         <p className="text-lg text-slate-700 dark:text-slate-400">
-          Discover the latest advancements in AI research.
+          Match the Grantor and the Topics, supporting c00l Topics for the next DECADE.
         </p>
       </header>
 
@@ -102,7 +117,7 @@ export default function Papers() {
   )
 }
 
-Papers.layoutProps = {
+Topics.layoutProps = {
   meta: {
     title: 'AI Research Papers',
     description: 'Latest AI research papers from arXiv.',
