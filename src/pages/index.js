@@ -45,12 +45,14 @@ function Header() {
           <StarryBackground />
         </div>
         <div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
-          <Logo className="w-auto h-10" />
-          <nav>
-            <ul className="flex items-center gap-x-8">
-              <NavItems />
-            </ul>
-          </nav>
+          <div className="flex items-center">
+            <Logo className="w-auto h-10 mr-8" />
+            <nav>
+              <ul className="flex items-center gap-x-8">
+                <NavItems />
+              </ul>
+            </nav>
+          </div>
           <div className="flex items-center">
             <SearchButton className="text-slate-500 hover:text-slate-600 w-8 h-8 -my-1 flex items-center justify-center md:hidden dark:hover:text-slate-300">
               <span className="sr-only">Search</span>
@@ -111,6 +113,7 @@ function Header() {
               <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-left dark:text-white">
                 SCI on Web3: URANIA
               </h1>
+              <br></br>
               <p className="mt-6 text-lg text-slate-600 max-w-3xl dark:text-slate-400 text-left">
                 Buidl the Web3-powered Science System for the
                 <code className="font-mono font-medium text-sky-500 dark:text-sky-400">
