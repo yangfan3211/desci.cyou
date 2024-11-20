@@ -96,7 +96,7 @@ export function NavPopover({ display = 'md:hidden', className, ...props }) {
             </svg>
           </button>
           <ul className="space-y-6">
-            <NavItems />
+            
             <li>
               <a
                 href="https://github.com/DesciDao/desci.cyou"
@@ -125,7 +125,7 @@ export function NavItems() {
       </li> */}
       <li>
         <Link href="/paper" className="hover:text-sky-500 dark:hover:text-sky-400">
-          Top Paper
+          Topics
         </Link>
       </li>
       <li>
@@ -216,11 +216,11 @@ export function Header({ hasNav = false, navIsOpen, onNavToggle, title, section 
                 <Logo className="w-auto h-10" />
               </Link>
               {/* <VersionSwitcher /> */}
-              <Featured />
+              {/* <Featured /> */}
               <div className="relative hidden lg:flex items-center ml-auto">
                 <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
                   <ul className="flex space-x-8">
-                    <NavItems />
+                    
                   </ul>
                 </nav>
                 <div className="flex items-center border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
