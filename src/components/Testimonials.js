@@ -10,7 +10,7 @@ let testimonials = [
       tags: ['LLM', 'Machine Learning'],
       url: 'https://www.malei.org/',
       author: {
-        name: 'Malei',
+        name: 'Raymond',
         role: (
           <>
             Associate Professor, University of Tokyo, Japan <br />
@@ -28,7 +28,7 @@ let testimonials = [
         role: 'University of Alberta PhD, Assistant Researcher',
         avatar: require('@/img/avatars/ryan-florence.jpg').default.src,
       },
-    }
+    },
   ],
   // Column 2
   [
@@ -39,15 +39,18 @@ let testimonials = [
       url: 'https://www.uowdubai.ac.ae/teaching/faculties/business-finance-and-management/dr-yiyang-bian',
       author: {
         name: `Bian`,
-        role: 
-        <>
-          Associate Professor<br />
-          Director of Blockchain Innvation and Analytics Lab<br />
-          Research Cluster Lead, University of Wollongong in Dubai
-        </>,
+        role: (
+          <>
+            Associate Professor
+            <br />
+            Director of Blockchain Innvation and Analytics Lab
+            <br />
+            Research Cluster Lead, University of Wollongong in Dubai
+          </>
+        ),
         avatar: require('@/img/avatars/debbie-obrien.jpg').default.src,
       },
-    },  
+    },
     {
       tags: ['LLM', 'RAG'],
       content: 'Skip to the end. Use @tailwindcss.',
@@ -57,7 +60,7 @@ let testimonials = [
         role: 'Former BuidlerDAO cofounder && CTO',
         avatar: require('@/img/avatars/kentcdodds.jpg').default.src,
       },
-    }
+    },
   ],
   // Column 3
   [
@@ -68,11 +71,12 @@ let testimonials = [
       url: 'https://www.leeduckgo.com/',
       author: {
         name: `LeeDuckGo`,
-        role: 
-        <>
-          NonceGeekDAO Founder <br />
-          PI in GuangZhou University
-        </>,
+        role: (
+          <>
+            NonceGeekDAO Founder <br />
+            PI in GuangZhou University
+          </>
+        ),
         avatar: require('@/img/avatars/debbie-obrien.jpg').default.src,
       },
     },
@@ -83,13 +87,10 @@ let testimonials = [
       url: 'https://www.uowdubai.ac.ae/teaching/faculties/school-business/dr-ziang-wang',
       author: {
         name: `Nova`,
-        role: 
-        <>
-          Assistant Professor, University of Wollongong in Dubai, UAE
-        </>,
+        role: <>Assistant Professor, University of Wollongong in Dubai, UAE</>,
         avatar: require('@/img/avatars/debbie-obrien.jpg').default.src,
       },
-    }
+    },
   ],
 ]
 
@@ -121,10 +122,7 @@ function Testimonial({ author, content, url, expanded, tags }) {
         {tags && (
           <div className="flex space-x-2 mb-4">
             {tags.map((tag, index) => (
-              <span
-                key={index}
-                className={`${getRandomColor()} px-2`}
-              >
+              <span key={index} className={`${getRandomColor()} px-2`}>
                 {tag}
               </span>
             ))}
@@ -141,7 +139,12 @@ function Testimonial({ author, content, url, expanded, tags }) {
           <div className="flex-auto">
             <div className="text-base text-slate-900 font-semibold dark:text-slate-300">
               {url ? (
-                <a href={url} tabIndex={focusable || expanded ? 0 : -1} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={url}
+                  tabIndex={focusable || expanded ? 0 : -1}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="absolute inset-0" />
                   {author.name}
                 </a>
@@ -160,7 +163,7 @@ function Testimonial({ author, content, url, expanded, tags }) {
 
 export function Testimonials() {
   let ref = useRef()
-  let [expanded, setExpanded] = useState(true) 
+  let [expanded, setExpanded] = useState(true)
   // Hint: the default set of expanded
   let [showCollapseButton, setShowCollapseButton] = useState(false)
   let [transition, setTransition] = useState(false)
