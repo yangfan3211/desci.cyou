@@ -3,16 +3,16 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 // Define Topic structure
-// 定义课题结构
+// Define topic structure
 class Topic {
   constructor(title, description, proposer, proposerLink, grantor, grantAmount) {
-    this.title = title;              // 标题
-    this.description = description;   // 描述
-    this.proposer = proposer;        // 提出人
-    this.proposerLink = proposerLink; // 提出人链接
-    this.grantor = grantor;          // 资助人
-    this.grantAmount = grantAmount;  // 资助金额
-    this.date = new Date();          // 提出日期 - initialized with current date
+    this.title = title;              // Title
+    this.description = description;   // Description
+    this.proposer = proposer;        // Proposer
+    this.proposerLink = proposerLink; // Proposer Link
+    this.grantor = grantor;          // Grantor
+    this.grantAmount = grantAmount;  // Grant Amount
+    this.date = new Date();          // Submission Date - initialized with current date
   }
 }
 
@@ -67,6 +67,25 @@ export default function Topics() {
           🧪✨ Match the Grantor and the Topics, supporting c00l Topics for the next DECADE.
         </p>
       </header>
+
+      <div className="flex justify-center gap-4 mb-8">
+        <a
+          href="https://t.me/leeduckgo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+          Submit a Topic
+        </a>
+        <a
+          href="https://t.me/leeduckgo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+        >
+          Become a Grantor
+        </a>
+      </div>
 
       <div className="overflow-x-auto">
         <table className="min-w-full table-auto border-collapse">
