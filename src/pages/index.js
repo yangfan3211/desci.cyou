@@ -46,7 +46,7 @@ function Header() {
         </div>
         <div className="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200">
           <div className="flex items-center">
-            <Logo className="w-auto h-10 mr-8" />
+            {/* <Logo className="w-auto h-10 mr-8" /> */}
             <nav>
               <ul className="flex items-center gap-x-8">
                 <NavItems />
