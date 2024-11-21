@@ -3,22 +3,36 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 // Define Topic structure
-// 定义课题结构
+// Define topic structure
 class Topic {
-  constructor(title, description, proposer, grantor, grantAmount) {
-    this.title = title;              // 标题
-    this.description = description;   // 描述
-    this.proposer = proposer;        // 提出人
-    this.grantor = grantor;          // 资助人
-    this.grantAmount = grantAmount;  // 资助金额
-    this.date = date;                // 提出日期
+  constructor(title, description, proposer, proposerLink, grantor, grantAmount) {
+    this.title = title;              // Title
+    this.description = description;   // Description
+    this.proposer = proposer;        // Proposer
+    this.proposerLink = proposerLink; // Proposer Link
+    this.grantor = grantor;          // Grantor
+    this.grantAmount = grantAmount;  // Grant Amount
+    this.date = new Date();          // Submission Date - initialized with current date
   }
 }
 
+// Initialize some example topics
+const initialTopics = [
+  new Topic(
+    "The Evolution of Cryptographic Organizations from an Organizational Sociology Perspective: Case Studies of Bitcoin and Ethereum",
+    "Based on the theoretical framework of 'organizational sociology', this research analyzes the organizational structure and evolution of Bitcoin and Ethereum, filling the gap in cryptographic research from an organizational social perspective.",
+    "LeeDuckGo",
+    "https://leeduckgo.com",
+    "",
+    ""
+  ),
+  // Add more topics as needed
+];
+
 export default function Topics() {
   const dateFormat = {
-    month: 'long',
-    day: 'numeric',
+    day: '2-digit',
+    month: '2-digit',
     year: 'numeric',
   }
   const [papers, setPapers] = useState([])
@@ -26,22 +40,22 @@ export default function Topics() {
 
   
 
-  useEffect(() => {
-    async function fetchPapers() {
-      try {
-        const response = await fetch('https://api.desci.cyou/api/top_sci_rss/rss?category=cs.AI')
-        const data = await response.json()
-        if (data.code === 0) {
-          setPapers(data.data)
-        }
-      } catch (error) {
-        console.error("Failed to fetch papers:", error)
-      } finally {
-        setLoading(false)
-      }
-    }
-    fetchPapers()
-  }, [])
+  // useEffect(() => {
+  //   async function fetchPapers() {
+  //     try {
+  //       const response = await fetch('https://api.desci.cyou/api/top_sci_rss/rss?category=cs.AI')
+  //       const data = await response.json()
+  //       if (data.code === 0) {
+  //         setPapers(data.data)
+  //       }
+  //     } catch (error) {
+  //       console.error("Failed to fetch papers:", error)
+  //     } finally {
+  //       setLoading(false)
+  //     }
+  //   }
+  //   fetchPapers()
+  // }, [])
 
   return (
     <main className="max-w-[52rem] mx-auto px-4 pb-28 sm:px-6 md:px-8 xl:px-12 lg:max-w-6xl">
@@ -50,69 +64,62 @@ export default function Topics() {
           Topics
         </h1>
         <p className="text-lg text-slate-700 dark:text-slate-400">
-          Match the Grantor and the Topics, supporting c00l Topics for the next DECADE.
+          🧪✨ Match the Grantor and the Topics, supporting c00l Topics for the next DECADE.
         </p>
       </header>
 
-      {loading ? (
-        <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-sky-500 dark:border-sky-300"></div>
-        </div>
-      ) : (
-        <div className="space-y-16">
-          {papers.map((paper, index) => (
-            <article key={index} className="relative group">
-              <div className="absolute -inset-y-2.5 -inset-x-4 md:-inset-y-4 md:-inset-x-6 sm:rounded-2xl group-hover:bg-slate-50/70 dark:group-hover:bg-slate-800/50" />
-              <svg
-                viewBox="0 0 9 9"
-                className="hidden absolute right-full mr-6 top-2 text-slate-200 dark:text-slate-600 md:mr-12 w-[calc(0.5rem+1px)] h-[calc(0.5rem+1px)] overflow-visible sm:block"
-              >
-                <circle
-                  cx="4.5"
-                  cy="4.5"
-                  r="4.5"
-                  stroke="currentColor"
-                  className="fill-white dark:fill-slate-900"
-                  strokeWidth={2}
-                />
-              </svg>
-              <div className="relative">
-                <h3 className="text-base font-semibold tracking-tight text-slate-900 dark:text-slate-200 pt-8 lg:pt-0">
-                  {paper.title}
-                </h3>
-                <p className="mt-2 mb-4 text-sm text-slate-700 dark:text-slate-400 line-clamp-3">
-                  {paper.summary}
-                </p>
-                <dl className="absolute left-0 top-0 lg:left-auto lg:right-full lg:mr-[calc(6.5rem+1px)]">
-                  <dt className="sr-only">Date</dt>
-                  <dd className="whitespace-nowrap text-sm leading-6 dark:text-slate-400">
-                    {paper.id.split(':')[2].substring(0,7)}
-                  </dd>
-                </dl>
-              </div>
-              <Link href={paper.link} className="flex items-center text-sm text-sky-500 font-medium">
-                <span className="absolute -inset-y-2.5 -inset-x-4 md:-inset-y-4 md:-inset-x-6 sm:rounded-2xl" />
-                <span className="relative">
-                  Read more<span className="sr-only">, {paper.title}</span>
-                </span>
-                <svg
-                  className="relative mt-px overflow-visible ml-2.5 text-sky-300 dark:text-sky-700"
-                  width="3"
-                  height="6"
-                  viewBox="0 0 3 6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M0 0L3 3L0 6"></path>
-                </svg>
-              </Link>
-            </article>
-          ))}
-        </div>
-      )}
+      <div className="flex justify-center gap-4 mb-8">
+        <a
+          href="https://t.me/leeduckgo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        >
+          Submit a Topic
+        </a>
+        <a
+          href="https://t.me/leeduckgo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+        >
+          Become a Grantor
+        </a>
+      </div>
+
+      <div className="overflow-x-auto">
+        <table className="min-w-full table-auto border-collapse">
+          <thead>
+            <tr className="bg-slate-100 dark:bg-slate-800">
+              <th className="border p-3 text-left">Title</th>
+              <th className="border p-3 text-left">Description</th>
+              <th className="border p-3 text-left">Proposer</th>
+              <th className="border p-3 text-left">Grantor</th>
+              <th className="border p-3 text-left">Amount</th>
+              <th className="border p-3 text-left">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {initialTopics.map((topic, index) => (
+              <tr key={index} className="border-b hover:bg-slate-50 dark:hover:bg-slate-700">
+                <td className="border p-3">{topic.title}</td>
+                <td className="border p-3">{topic.description}</td>
+                <td className="border p-3">
+                  <a href={topic.proposerLink} className="text-blue-500 hover:underline">
+                    {topic.proposer}
+                  </a>
+                </td>
+                <td className="border p-3">{topic.grantor}</td>
+                <td className="border p-3">{topic.grantAmount}</td>
+                <td className="border p-3">
+                  {topic.date.toLocaleDateString(undefined, dateFormat)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      
     </main>
   )
 }
