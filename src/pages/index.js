@@ -149,27 +149,24 @@ export default function Home() {
           </h2>
           <figure>
             <blockquote>
-              <p className="mt-6 max-w-3xl mx-auto text-l">
+              <p className="mt-6 max-w-3xl mx-auto text-l text-left">
                 We're revolutionizing research through Web3, bridging the gap between Industry and
                 Academia
               </p>
-              <ul className="mt-4 max-w-3xl mx-auto text-l space-y-2 px-4 sm:px-0">
+              <ul className="mt-4 max-w-3xl mx-auto text-l space-y-2 px-4 sm:px-4 list-none">
                 <li className="flex items-start">
-                  <span className="flex-shrink-0 mr-2">•</span>
-                  <span className="flex-1">
+                  <span className="flex-1 text-left">
                     <b>Web3-powered Grant-Topic Matcher</b> — discovering unexplored
                     interdisciplinary areas
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="flex-shrink-0 mr-2">•</span>
-                  <span className="flex-1">
+                  <span className="flex-1 text-left">
                     <b>Grant-Researcher Matcher</b> — connecting sponsors with researchers
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="flex-shrink-0 mr-2">•</span>
-                  <span className="flex-1">
+                  <span className="flex-1 text-left">
                     <b>Next-Gen Open Conf System</b> — transparent & immutable funding flows and
                     on-chain activities
                   </span>
